@@ -1,0 +1,12 @@
+.header{
+}
+
+.header__container {
+    border-radius: 5px;
+    background-color: #379683;
+    padding: 10px;
+}
+
+.header__title {
+    color: rgb(255, 255, 255);
+}

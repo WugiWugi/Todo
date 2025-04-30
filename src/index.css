@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Press Start 2P", system-ui;
+}
+
+html,
+body {
+    padding: 80px 200px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #5CDB95;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #05386b;
+    height: 100%;
+    box-sizing: border-box;
+}
