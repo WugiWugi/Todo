@@ -1,10 +1,29 @@
 .main {
-flex: 1;
+    flex: 1;
     background-color: rgb(33, 105, 105);
     box-sizing: border-box;
     margin-top: 10px;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
+}
+
+.main__block-form {
+    background-color: hsl(147, 64%, 61%, 80%);
+    padding-top: 22%;
+    padding-left: 40%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.notes-form__input,
+.notes-form__btn {
+    padding: 10px;
+    box-shadow: -3px 3px rgb(33, 105, 105);
 }
 
 .main__container {
@@ -25,22 +44,75 @@ flex: 1;
     overflow-y: auto;
 }
 
-.child-related {
+.child-related__list-item,
+.list__list-item {
+    list-style: none;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+.list-item__btn {
+    overflow: hidden;
+    width: 90%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.child-related__list-item-btn {
+    background: none;
+    color: white;
+    border: none;
+}
+
+.child-related__btn-deleted,
+.list-item__btn-deleted {
+    position: absolute;
+    top: 0px;
+    right: -15px;
+}
+
+.child-related__list-item,
+.list-item__btn,
+.list-item__btn-deleted,
+.child-related__btn-deleted {
+    border: none;
+    background: none;
+    padding: 5px;
+    transition: all 0.1s ease;
+    font-size: 0.8rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.active,
+.child-related__btn-deleted:hover,
+.child-related__list-item:hover,
+.list-item__btn:hover,
+.list-item__btn-deleted:hover {
+    background-color: rgb(33, 105, 105);
+    box-shadow: -3px 3px white;
+}
+
+.main__child-related {
     width: 100%;
     height: 100%;
+    padding: 19.8px;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
-.list__list-item{
-    list-style: none;
+.child-related__btn,
+.list__btn {
+    font-size: 1rem;
+    padding: 8px 10px;
+    border-radius: 10px;
+    box-shadow: -3px 3px rgb(23, 37, 37);
 }
 
-.list__btn{
-font-size: 1rem;
-padding: 8px 10px;
-border-radius: 10px;
-box-shadow: -3px 3px rgb(23, 37, 37);
-}
 
-.list__btn:active{
-transform: translateX(-2px)
+
+.child-related__btn:active,
+.list__btn:active {
+    transform: translateX(-2px)
 }
